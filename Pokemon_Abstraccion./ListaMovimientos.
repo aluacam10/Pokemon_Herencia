@@ -1,0 +1,22 @@
+package pokemon;
+import java.util.ArrayList;
+public class ListaMovimientos {
+private ArrayList<Movimiento> movimientos = new ArrayList();
+
+public ListaMovimientos() {
+// Movimientos de tipo Aire
+movimientos.add(new Movimiento(nombre:"Ataque aereo", puntosDeAtaque:40, Tipo. ELECTRICO, pp:30))
+movimientos.add(new Movimiento(nombre:"Ascenso draco.", puntosDeAtaque: 60, Tipo. ELECTRICO, pp:10))
+// Movimientos de tipo tierra
+movimientos.add(new Movimiento(nombre:"Terratemblor", puntosDeAtaque:60, Tipo. TIERRA, pp:20));
+movimientos.add(new Movimiento(nombre:"Disparo lodo", puntosDeAtaque: 80, Tipo. TIERRA, pp:10));
+
+// Metodo que devuelve el movimiento buscando el nombre
+Codeium: Refactor | Explain
+public Movimiento buscarMovimientoPorNombre(String nombre) {
+for (Movimiento movimiento : movimientos) {
+if (movimiento.getNombre().equals(nombre)) {
+return movimiento;
+return null;
+
+}
