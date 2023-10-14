@@ -1,0 +1,7 @@
+package Pokemon;
+
+public class PokemonAire extends Pokemon {
+    public PokemonAire(String Nombre) {
+        super(Nombre, "Aire", 10);
+    }
+}
