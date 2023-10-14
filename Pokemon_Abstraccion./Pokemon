@@ -1,1 +1,43 @@
+package Pokemon;
+public class Pokemon {
+    private int hp;
+    private int level;
+    private String Nombre;
+    private String TipoPokemon;
 
+    public Pokemon(String nombre, String tipo, int nivel) {
+        this.hp = 100;
+        this.Nombre = Nombre;
+        this.Tipo = TipoPokemon;
+        this.level = level;
+    }
+    public int getHP() {
+        return hp;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getTipoPokemon() {
+        return tipo;
+    }
+
+    public int getlevel() {
+        return level;
+    }
+
+    private void calcular_lesiones(int danio) {
+        this.level -= lesiones;
+        System.out.printf("%s recibe %d puntos de lesiones\n", this.getNombre(), lesiones);
+    }
+
+    public void recibirAtaques(String movimiento) {
+        System.out.printf("%s recibe ATK %s\n", this.getNombre(), movimiento);
+        calculaDanio((int) (Math.random() * 10 + 1));
+    }
+
+    public void atacar(String movimiento, Pokemon pokemon) {
+        System.out.printf("%s ataca a %s con %s\n", this.getNombre(), pokemon.getNombre(), movimiento);
+        pokemon.recibirAtaques(movimiento);
+    }
+}
