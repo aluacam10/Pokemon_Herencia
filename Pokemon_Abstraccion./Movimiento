@@ -1,0 +1,7 @@
+public class Movimiento {
+  private string nombre;
+  private int puntosDeAtaque;
+  private string tipo de tipo “Tipo”.;
+
+
+    }
